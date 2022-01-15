@@ -5,7 +5,8 @@ body {
 }
 
 .entry-content {
-	width: calc(100% - 200px);
+	width: calc(100% - 300px);
+	/* min-width: 728px; */
 }
 ul,
 li {
@@ -17,24 +18,8 @@ li {
 .toc-list {
 	display: block;
 	position: relative;
-	width: 200px;
+	width: 300px;
 	right: 0;
-	/*   background:gray; */
-}
-.toc-list .lv-1 {
-	width: 200px;
-	height: auto;
-	position: absolute;
-	right: 0;
-	/*   background:green; */
-}
-.toc-list .lv-1::before {
-	content: '';
-	width: 2px;
-	height: 100%;
-	border-left: 2px solid #eee;
-	position: absolute;
-	z-index: -1;
 }
 
 .toc-item {
@@ -49,6 +34,21 @@ li {
 	cursor: pointer;
 	color: #333;
 	border-left: 2px solid transparent;
+}
+
+.lv-1 {
+	width: 200px;
+	height: auto;
+	position: absolute;
+	right: 0;
+}
+.lv-1::before {
+	content: '';
+	width: 2px;
+	height: 100%;
+	border-left: 2px solid #eee;
+	position: absolute;
+	z-index: -1;
 }
 
 .lv-1 .toc-item {
@@ -79,14 +79,6 @@ li {
 	color: #72afcf;
 }
 
-.header {
-	width: 100%;
-	height: 40px;
-	background: green;
-	position: fixed;
-	top: 0;
-	z-index: 999;
-}
 .entry-wrap {
 	display: flex;
 	position: relative;

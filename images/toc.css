@@ -1,87 +1,106 @@
-/* custom card style */
-
-.toc-app-common {
-    margin-top:2em;
+html,
+body {
+	margin: 0;
+	padding: 0;
 }
 
-.toc-app-common::before {
-    content:'';
-    width:2px;
-    height:100%;
-    border-left:2px solid #eee;
-    position:absolute;
-    z-index:-1;
+.entry-content {
+	width: calc(100% - 200px);
+}
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
-.toc-app-basic {
-    position: fixed;
+.toc-list {
+	display: block;
+	position: relative;
+	width: 200px;
+	right: 0;
+	/*   background:gray; */
+}
+.toc-list .lv-1 {
+	width: 200px;
+	height: auto;
+	position: absolute;
+	right: 0;
+	/*   background:green; */
+}
+.toc-list .lv-1::before {
+	content: '';
+	width: 2px;
+	height: 100%;
+	border-left: 2px solid #eee;
+	position: absolute;
+	z-index: -1;
 }
 
-.toc-app-bottom {
-    position: absolute;
+.toc-item {
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 0.875em;
+	line-height: 1.2;
+	padding-left: 1.875em;
+	border-left: 2px solid #eee;
+	cursor: pointer;
+	color: #333;
+	border-left: 2px solid transparent;
 }
 
-/* custom item style */
-#toc-wrap {
-    padding-top:5em;
-    padding-left: 2em;
-    padding: 5em 2em 7.5em;
+.lv-1 .toc-item {
+	font-weight: bold;
+	margin-top: 0.875em;
 }
-.items {
-    /* height: auto; */
-    /* width: 15.3rem; */
-    overflow-y: scroll;
-    -ms-overflow-style: none;
-    position: -webkit-sticky;
-    position: sticky;
-    padding: 0;
-    display: block;
-    top: 5em;
-    left: 0;
-    right: 0;
-    bottom: 0;
+.lv-1 li:first-child .toc-item {
+	margin-top: 0;
+}
+.lv-2 .toc-item {
+	font-weight: normal;
+}
+.lv-3 .toc-item {
+	font-weight: normal;
+	padding-left: 2.5em;
+}
+.lv-4 .toc-item {
+	padding-left: 3em;
 }
 
-.items::-webkit-scrollbar {
-    display: none !important;
+.on {
+	color: red;
+	border-color: #72afcf;
 }
 
-.toc-common {
-    display: block;
-    cursor: pointer;
-    color: darkgrey;
-    padding:0.2em 0;
+.on,
+.toc-common:hover {
+	color: #72afcf;
 }
 
-.toc-common {
-    font-size:0.875em;
-    line-height:1.2;
-    padding-left:1.875em;
-    border-left:2px solid transparent;
-
+.header {
+	width: 100%;
+	height: 40px;
+	background: green;
+	position: fixed;
+	top: 0;
+	z-index: 999;
 }
-.toc-level-1 {
-    font-weight: bold;
-    margin-top:0.875em;
+.entry-wrap {
+	display: flex;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
 }
-
-.toc-level-1:first-child {margin-top:0;}
-
-.toc-level-3 {
-    padding-left:2.5em;
+.fixed {
+	position: fixed;
 }
-.toc-level-4 {
-    padding-left:3em;
+#toc-link-0 {
+	height: 200px;
 }
-.toc-active {
-    border-color:#72afcf;
-}
-.toc-active, .toc-common:hover {
-    color: #72afcf;
-}
-
-@media (max-width: 83.75rem) {
-    .toc-app-common {
-        visibility: hidden;
-    }
+@media (max-width: 1000px) {
+	#toc-link-0 {
+		height: 400px;
+	}
 }

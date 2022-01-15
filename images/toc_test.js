@@ -1,7 +1,9 @@
-var entryName = 'entry-content'; // 게시글 내용 출력 부분
-if (document.querySelector('.' + entryName) !== null) {
-	tocInit();
-}
+$(document).ready(function () {
+	var entryName = 'entry-content'; // 게시글 내용 출력 부분
+	if (document.querySelector('.' + entryName) !== null) {
+		tocInit();
+	}
+});
 
 function tocInit() {
 	// 사용자 커스텀

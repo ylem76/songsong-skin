@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/*
+ *
+ * CSS CONTENTS:
+ *
+ * 01. Web Font
+ * 02. Type Selector Reset
+ * 03. Accessibility Navigation
+ * 04. Layout Selector
+ * 05. Components
+ * 06. Entry Content
+ * 07. Comment
+ * 08. Widget & Template Page
+ * 09. ETC
+ * 10. Post Type & Color Type
+ * 11. Retina Display
+ * 12. Media Screen - Tablet
+ * 13. Media Screen - Mobie
+ *
+ */
+/* 
+@import url('./images/basic.css');
+@import url('./images/layout.css');
+@import url('./images/components.css');
+@import url('./images/entrycontent.css');
+@import url('./images/posttype.css');
+@import url('./images/widget.css'); */
+
+
+
+
+
+
+
+/* Retina Display */
+@media only screen and (-webkit-min-device-pixel-ratio:1.5) {
+
+  #header .search button,
+  #header .search:before,
+  .social-link a,
+  .cover-slider .prev,
+  .cover-slider .next,
+  .cover-gallery ul li a:before,
+  .post-header .list-type button,
+  .pagination .prev,
+  .pagination .next,
+  .comments .comment-form .field .secret input[type=checkbox]:checked+label:before {
+    background-image: url(./images/ico_package_2x.png);
+    background-size: 200px auto;
+  }
+
+  .color-chocolate .social-link a,
+  .color-chocolate #header .search button,
+  .color-chocolate .cover-gallery ul li a:before,
+  .color-chocolate .post-header .list-type button {
+    background-image: url(./images/ico_package_chocolate_2x.png);
+    background-size: 200px auto;
+  }
+}
+
+/* Media Screen - Mobie */
+@media screen and (max-width:767px) {
+  .another-category table th {
+    display: block;
+    padding: 0;
+  }
+
+  .another-category table td {
+    display: block;
+    margin-bottom: 19px;
+  }
+
+  
+}
+
+.revenue_unit_wrap.position_list {
+  max-width: 860px;
+  margin: 30px auto
+}
+
+

@@ -1,0 +1,87 @@
+/* custom card style */
+
+.toc-app-common {
+    margin-top:2em;
+}
+
+.toc-app-common::before {
+    content:'';
+    width:2px;
+    height:100%;
+    border-left:2px solid #eee;
+    position:absolute;
+    z-index:-1;
+}
+
+.toc-app-basic {
+    position: fixed;
+}
+
+.toc-app-bottom {
+    position: absolute;
+}
+
+/* custom item style */
+#toc-wrap {
+    padding-top:5em;
+    padding-left: 2em;
+    padding: 5em 2em 7.5em;
+}
+.items {
+    /* height: auto; */
+    /* width: 15.3rem; */
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    position: -webkit-sticky;
+    position: sticky;
+    padding: 0;
+    display: block;
+    top: 5em;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.items::-webkit-scrollbar {
+    display: none !important;
+}
+
+.toc-common {
+    display: block;
+    cursor: pointer;
+    color: darkgrey;
+    padding:0.2em 0;
+}
+
+.toc-common {
+    font-size:0.875em;
+    line-height:1.2;
+    padding-left:1.875em;
+    border-left:2px solid transparent;
+
+}
+.toc-level-1 {
+    font-weight: bold;
+    margin-top:0.875em;
+}
+
+.toc-level-1:first-child {margin-top:0;}
+
+.toc-level-3 {
+    padding-left:2.5em;
+}
+.toc-level-4 {
+    padding-left:3em;
+}
+.toc-active {
+    border-color:#72afcf;
+}
+.toc-active, .toc-common:hover {
+    color: #72afcf;
+}
+
+@media (max-width: 83.75rem) {
+    .toc-app-common {
+        visibility: hidden;
+    }
+}

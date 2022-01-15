@@ -7,6 +7,7 @@ $(document).ready(function () {
 
 function tocInit() {
 	// 사용자 커스텀
+	var entryName = 'entry-content'; // 게시글 내용 출력 부분
 	var entryWrapName = 'entry-wrap'; // 게시글 내용 출력 감싸는 부분(toc넣을 곳)
 	var navName = 'toc-list'; // 네비게이션 리스트 이름 지정
 	var headerName = 'header'; // 상단 헤더 클래스 이름

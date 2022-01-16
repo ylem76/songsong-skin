@@ -37,7 +37,9 @@
 			scrollBar.style.transform = `translateX(-${100 - percent}%)`;
 		});
 	}
-	scroll();
+	if ($('#article') != null) {
+		scroll();
+	}
 
 	function gnb() {
 		$('#header').on('click', '.mobile-menu', function () {

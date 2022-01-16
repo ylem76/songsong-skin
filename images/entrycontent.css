@@ -8,7 +8,7 @@
 /* 기사 헤더 */
 .hgroup {
 	text-align: center;
-	margin: 0 auto;
+	margin: 0 auto 4em;
 	padding-top: 0;
 	max-width: 960px;
 }
@@ -26,8 +26,10 @@
 .entry-content {
 	width: 100%;
 	max-width: 728px;
-	/* margin-top:5em; */
-	margin-left: calc((100% - 728px) / 2);
+}
+
+.entry-content > div > p:first-child ~ figure.imageblock.alignCenter {
+	margin-top: 0;
 }
 
 .entry-content h1,
@@ -710,9 +712,11 @@
 }
 
 /* 포스트 하단 버튼 */
-/* .container_postbtn .postbtn_like {
-  float:left;padding:0 9px;border-radius:16px;border:1px solid #959595;border-color:rgba(185,185,185,0.5);font-size:0 !important
- }
-.container_postbtn .postbtn_like .wrap_btn{float:left;position:relative}
-.container_postbtn .postbtn_like + .btn_menu_toolbar{margin:0 0 0 6px}
- */
+.entry-wrap {
+	margin-bottom: 109px !important;
+	overflow: visible !important;
+}
+.entry-content .container_postbtn {
+	transform: translateY(100%);
+	padding: 2em 0 0 0;
+}

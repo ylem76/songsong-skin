@@ -5,8 +5,7 @@ body {
 }
 
 .entry-content {
-	width: calc(100% - 300px);
-	/* min-width: 728px; */
+	/* width: calc(100% - 200px); */
 }
 ul,
 li {
@@ -19,12 +18,29 @@ li {
 	display: block;
 	position: relative;
 	width: 300px;
+	padding-left: 2em;
 	right: 0;
+	box-sizing: border-box;
+	line-height: 1.4;
+	overflow: hidden;
+}
+.toc-list .lv-1 {
+	width: calc(300px - 3em);
+	height: auto;
+	position: absolute;
+}
+.toc-list .lv-1::before {
+	content: '';
+	width: 2px;
+	height: 100%;
+	border-left: 2px solid #eee;
+	position: absolute;
+	z-index: -1;
 }
 
 .toc-item {
 	display: block;
-	width: 100%;
+	width: auto;
 	text-decoration: none;
 	font-weight: normal;
 	font-size: 0.875em;
@@ -34,43 +50,29 @@ li {
 	cursor: pointer;
 	color: #333;
 	border-left: 2px solid transparent;
+	padding: 3px 0 3px 1.875em;
+	word-break: keep-all;
 }
 
-.lv-1 {
-	width: 200px;
-	height: auto;
-	position: absolute;
-	right: 0;
-}
-.lv-1::before {
-	content: '';
-	width: 2px;
-	height: 100%;
-	border-left: 2px solid #eee;
-	position: absolute;
-	z-index: -1;
-}
-
-.lv-1 .toc-item {
+.lv-1 > li > .toc-item {
 	font-weight: bold;
 	margin-top: 0.875em;
 }
-.lv-1 li:first-child .toc-item {
+.lv-1 > li:first-child .toc-item {
 	margin-top: 0;
 }
-.lv-2 .toc-item {
+.lv-2 > li > .toc-item {
 	font-weight: normal;
 }
-.lv-3 .toc-item {
+.lv-3 > li > .toc-item {
 	font-weight: normal;
 	padding-left: 2.5em;
 }
-.lv-4 .toc-item {
+.lv-4 > li > .toc-item {
 	padding-left: 3em;
 }
 
 .on {
-	color: red;
 	border-color: #72afcf;
 }
 
@@ -84,15 +86,53 @@ li {
 	position: relative;
 	width: 100%;
 	overflow: hidden;
+	margin-top: 4em;
+	margin: 0 auto;
+	max-width: 1328px;
+}
+.entry-wrap::before {
+	content: '';
+	display: block;
+	width: 300px;
 }
 .fixed {
 	position: fixed;
 }
-#toc-link-0 {
-	height: 200px;
+
+@media (max-width: 1345px) and (min-width: 1101px) {
+	.entry-wrap {
+		max-width: 1028px;
+	}
+	.entry-wrap::before {
+		display: none;
+	}
+
+	.reply-btn-wrap {
+		width: 100%;
+		max-width: 1028px;
+		margin: 0 auto;
+		height: 10px;
+	}
+	.reply-btn-wrap .btn-comment {
+		right: 300px;
+	}
+	.reply-btn-wrap + div {
+		width: 1028px;
+		margin: 0 auto;
+	}
+	.reply-btn-wrap + div .comments {
+		margin-left: 0;
+	}
 }
-@media (max-width: 1000px) {
-	#toc-link-0 {
-		height: 400px;
+
+@media (max-width: 1100px) {
+	.entry-content {
+		margin: 0 auto;
+	}
+	.entry-wrap::before {
+		display: none;
+	}
+	.toc-list {
+		display: none;
 	}
 }

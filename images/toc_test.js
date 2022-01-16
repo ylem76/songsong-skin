@@ -195,6 +195,8 @@ function tocInit() {
 		var fixOffset = $contentWrap.offset().top - TOC_CONST.headerHeight - gap;
 		var endOffset = $contentWrap.offset().top + $contentWrap.height() - tocNavUl.offsetHeight - TOC_CONST.headerHeight - gap - gap;
 
+		console.log($contentWrap.offset().top, TOC_CONST.headerHeight, gap);
+		console.log(fixOffset);
 		$(window).on('scroll', function (e) {
 			scrollTop = e.target.scrollingElement.scrollTop;
 			if (scrollTop < fixOffset) {

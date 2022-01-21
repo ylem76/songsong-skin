@@ -24,7 +24,7 @@ li {
 	line-height: 1.4;
 	overflow: hidden;
 }
-.toc-list .lv-1 {
+.toc-list > ul {
 	width: calc(300px - 3em);
 	height: auto;
 	position: absolute;

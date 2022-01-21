@@ -37,7 +37,7 @@
 			scrollBar.style.transform = `translateX(-${100 - percent}%)`;
 		});
 	}
-	if ($('#article') != null) {
+	if ($('#article').length !== 0 ) {
 		scroll();
 	}
 

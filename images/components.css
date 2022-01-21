@@ -4,10 +4,9 @@
 
 /* 카테고리 버튼 */
 .article-meta {
-	display: flex;
-    justify-content: center;
-    align-items:center;
-    
+	display: inline-flex;
+	justify-content: left;
+	align-items:center;
 }
 .article-meta .category {
   text-decoration: none;
@@ -1244,12 +1243,10 @@ a.btn {
   line-height: 1.4444em;
   color: #525252;
   font-size: 1.5em;
-  line-height: 1.4;
-  /*! height: 66px; */
-  display: flex;
+  line-height: 1.4; 
+  display: block;
   align-items: center;
   justify-content: flex-start;
-  /*! background: green; */
   word-break: keep-all;
   transition: color 0.3s;
 }
@@ -1265,6 +1262,7 @@ a.btn {
   line-height: 1.6;
   color: #666;
   margin-top: 13px;
+  width: 100%;
 }
 
 .article-item .article-info .article-meta {
@@ -1315,10 +1313,13 @@ a.btn {
 
 .article-item .article-info {
   width: calc(100% - 450px);
-  display: flex;
+  display: block;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  position: relative;
+  /* background: green; */
+  /* overflow: hidden; */
 }
 
 .article-item .category {

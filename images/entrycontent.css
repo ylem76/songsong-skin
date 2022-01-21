@@ -159,6 +159,10 @@
 	text-indent: -22px;
 }
 
+.entry-content ul li pre {text-indent:0; margin-top:-1.5em;}
+.entry-content ul li pre code.hljs {margin:0;}
+
+
 .entry-content ol {
 	list-style: inside decimal;
 }

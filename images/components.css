@@ -740,11 +740,10 @@ a.btn {
 	  font-size: 0.75rem;
 	  box-sizing: border-box;
 	  padding: 0 0.75em;
-	  margin:0 1em 0.875em 0;	    
-	  text-decoration: none;  
+	  margin:0 1em 0.875em 0;
+	  text-decoration: none;
 	  color: #999;
-	  background-color:#fff;  
-	  border:1px solid #ddd;
+	  border: 1px solid rgb(151 151 151 / 50%);
 }
 
 .tags .items a:hover {

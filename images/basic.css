@@ -34,20 +34,6 @@ body {
 	transition: background 0.5s;
 }
 
-/* body::before {
-	content:'';
-	width:100%;
-	height:100%;
-	display:block;
-	position:fixed;
-	top:0;
-	right:0;
-	bottom:0;
-	left:0;
-	z-index:999;
-	background:black;
-	opacity:1;
-} */
 div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, figure {
 	margin: 0;
 	padding: 0;
@@ -77,6 +63,14 @@ button {
 ul li {
 	list-style: none;
 }
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
 img, fieldset {
 	border: none;
 	vertical-align: top;

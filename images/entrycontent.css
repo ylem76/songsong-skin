@@ -113,6 +113,9 @@
 	line-height: 1.6;
 	color: #666;
 }
+.entry-content p a {
+	word-break: break-all;
+}
 
 .entry-content p img {
 	max-width: 100%;
@@ -159,9 +162,13 @@
 	text-indent: -22px;
 }
 
-.entry-content ul li pre {text-indent:0; margin-top:-1.5em;}
-.entry-content ul li pre code.hljs {margin:0;}
-
+.entry-content ul li pre {
+	text-indent: 0;
+	margin-top: -1.5em;
+}
+.entry-content ul li pre code.hljs {
+	margin: 0;
+}
 
 .entry-content ol {
 	list-style: inside decimal;
@@ -257,7 +264,7 @@
 }
 
 .entry-content .protected_form p:before {
-	content: '';
+	content: "";
 	display: block;
 	width: 64px;
 	height: 84px;
@@ -415,7 +422,13 @@
 	line-height: 20px;
 }
 
-.comments .comment-list ul li .author-meta .nickname .tistoryProfileLayerTrigger {
+.comments
+	.comment-list
+	ul
+	li
+	.author-meta
+	.nickname
+	.tistoryProfileLayerTrigger {
 	margin-bottom: 3px;
 	margin-right: 0;
 	vertical-align: bottom;
@@ -431,7 +444,7 @@
 
 .comments .comment-list ul li .author-meta .date:before,
 .comments .comment-list ul li .author-meta .date a:before {
-	content: '';
+	content: "";
 	display: inline-block;
 	width: 1px;
 	height: 9px;
@@ -476,8 +489,8 @@
 	display: flex;
 }
 
-.comments .comment-form input[type='text'],
-.comments .comment-form input[type='password'],
+.comments .comment-form input[type="text"],
+.comments .comment-form input[type="password"],
 .comments .comment-form textarea {
 	border: 1px solid #e6e6e6;
 	font-size: 0.9375em;
@@ -486,8 +499,8 @@
 	background-color: transparent;
 }
 
-.comments .comment-form input[type='text'],
-.comments .comment-form input[type='password'] {
+.comments .comment-form input[type="text"],
+.comments .comment-form input[type="password"] {
 	width: 140px;
 	height: 52px;
 	/* margin-right: 6px; */
@@ -495,7 +508,7 @@
 	box-sizing: border-box;
 }
 
-.comments .comment-form input[type='text'] {
+.comments .comment-form input[type="text"] {
 	margin-right: 10px;
 }
 
@@ -538,7 +551,7 @@
 }
 
 .comments .comment-form .field .secret label:before {
-	content: '';
+	content: "";
 	display: inline-block;
 	width: 19px;
 	height: 18px;
@@ -548,7 +561,12 @@
 	background-color: #fff;
 }
 
-.comments .comment-form .field .secret input[type='checkbox']:checked + label:before {
+.comments
+	.comment-form
+	.field
+	.secret
+	input[type="checkbox"]:checked
+	+ label:before {
 	background-image: url(./images/ico_package.png);
 	background-repeat: no-repeat;
 	background-position: -150px -100px;
@@ -631,7 +649,7 @@
 	}
 
 	.comments .comment-list ul li ul li:before {
-		content: '';
+		content: "";
 		position: absolute;
 		top: 34px;
 		left: 18px;
@@ -660,7 +678,13 @@
 		line-height: 1.5;
 	}
 
-	.comments .comment-list ul li .author-meta .nickname .tistoryProfileLayerTrigger {
+	.comments
+		.comment-list
+		ul
+		li
+		.author-meta
+		.nickname
+		.tistoryProfileLayerTrigger {
 		margin-bottom: 4px;
 	}
 
@@ -693,8 +717,8 @@
 		font-size: 0.875em;
 	}
 
-	.comments .comment-form input[type='text'],
-	.comments .comment-form input[type='password'] {
+	.comments .comment-form input[type="text"],
+	.comments .comment-form input[type="password"] {
 		width: calc(50% - 2px);
 	}
 	.comments .comment-form .field {
@@ -724,4 +748,6 @@
 	transform: translateY(100%);
 	padding: 2em 0 0 0;
 }
-.btn_subscription {display:none;}
+.btn_subscription {
+	display: none;
+}

@@ -1,5 +1,8 @@
 $(document).ready(function () {
-	kakaoShareFix();
+	// 게시글 페이지에서 동작
+	if ($("#tt-body-page").length == 1) {
+		kakaoShareFix();
+	}
 });
 
 function kakaoShareFix() {

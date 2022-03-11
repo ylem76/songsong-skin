@@ -1,3 +1,19 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.entry-content {
+	/* width: calc(100% - 200px); */ 
+}
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
 .toc-list {
 	display: block;
 	position: relative;
@@ -17,7 +33,7 @@
 	content: '';
 	width: 2px;
 	height: 100%;
-	border-left: 2px solid #eeeeee;
+	border-left: 2px solid #eee;
 	position: absolute;
 	z-index: -1;
 }

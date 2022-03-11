@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+  <link rel="canonical" href="https://songsong.dev/">
   <title>[##_page_title_##]</title>
-	
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>	
-	
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./style.css">
 
   <!-- font -->
@@ -16,57 +16,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
-	
-	<link rel="stylesheet" href="./images/basic.css">
+
+  <link rel="stylesheet" href="./images/basic.css">
   <link rel="stylesheet" href="./images/components.css">
   <link rel="stylesheet" href="./images/entrycontent.css">
   <link rel="stylesheet" href="./images/layout.css">
   <link rel="stylesheet" href="./images/posttype.css">
   <link rel="stylesheet" href="./images/widget.css">
-	
-
-  <!--
-
-<link rel="stylesheet" href="./images/toc.css">
+  <link rel="stylesheet" href="./images/toc.css">
 
 
-
-	<link rel="stylesheet" href="./images/basic.css">
-  <link rel="stylesheet" href="./images/components.css">
-  <link rel="stylesheet" href="./images/entrycontent.css">
-  <link rel="stylesheet" href="./images/layout.css">
-  <link rel="stylesheet" href="./images/posttype.css">
-  <link rel="stylesheet" href="./images/widget.css">
-
-<link rel="stylesheet" href="https://dev.thebreeze.co.kr/ylem76/skin/images/basic.css">
-  <link rel="stylesheet" href="https://dev.thebreeze.co.kr/ylem76/skin/images/components.css">
-  <link rel="stylesheet" href="https://dev.thebreeze.co.kr/ylem76/skin/images/entrycontent.css">
-  <link rel="stylesheet" href="https://dev.thebreeze.co.kr/ylem76/skin/images/layout.css">
-  <link rel="stylesheet" href="https://dev.thebreeze.co.kr/ylem76/skin/images/posttype.css">
-  <link rel="stylesheet" href="https://dev.thebreeze.co.kr/ylem76/skin/images/widget.css">
-  
-
-
--->
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!--
-<script src="//t1.daumcdn.net/tistory_admin/lib/jquery/jquery-1.12.4.min.js"></script>
--->
-  
 
   <!-- naver search advisor -->
   <meta name="naver-site-verification" content="c9f71c216cb7e517733a39db1295daaec5d37ea4" />
@@ -86,6 +45,7 @@
     gtag('js', new Date());
     gtag('config', 'UA-199666140-1');
   </script>
+  <!-- google adsense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3549159921171034" crossorigin="anonymous"></script>
 </head>
 
@@ -95,16 +55,18 @@
       <a href="#content">본문 바로가기</a>
     </div>
     <div id="wrap">
-      <header id="header">
-				<div class="scrollbar">
-				</div>
+      <header id="header" class="header">
+        <div class="scrollbar">
+        </div>
         <div class="header__wrapper">
           <nav role="navigation" class="category">
             [##_category_list_##]
           </nav>
           <button type="button" class="mobile-menu"><span>메뉴</span></button>
         </div>
-        <h1><a href="[##_blog_link_##]">[##_title_##]</a></h1>
+        <h1>
+          <a href="[##_blog_link_##]">[##_title_##]</a>
+        </h1>
 
         <!-- [s] gnb -->
         <div class="menu">
@@ -112,10 +74,22 @@
             [##_category_list_##]
           </nav>
           <div class="social-link">
-            <s_if_var_sns-pinterest><a href="[##_var_sns-pinterest_##]" class="pinterest">Pinterest</a></s_if_var_sns-pinterest>
-            <s_if_var_sns-facebook><a href="[##_var_sns-facebook_##]" class="facebook">Facebook</a></s_if_var_sns-facebook>
-            <s_if_var_sns-twitter><a href="[##_var_sns-twitter_##]" class="twitter">Twitter</a></s_if_var_sns-twitter>
-            <s_if_var_sns-instagram><a href="[##_var_sns-instagram_##]" class="instagram">Instagram</a></s_if_var_sns-instagram>
+            <s_if_var_sns-pinterest>
+
+              <a href="[##_var_sns-pinterest_##]" class="pinterest">Pinterest</a>
+            </s_if_var_sns-pinterest>
+            <s_if_var_sns-facebook>
+
+              <a href="[##_var_sns-facebook_##]" class="facebook">Facebook</a>
+            </s_if_var_sns-facebook>
+            <s_if_var_sns-twitter>
+
+              <a href="[##_var_sns-twitter_##]" class="twitter">Twitter</a>
+            </s_if_var_sns-twitter>
+            <s_if_var_sns-instagram>
+
+              <a href="[##_var_sns-instagram_##]" class="instagram">Instagram</a>
+            </s_if_var_sns-instagram>
           </div>
           <!-- <p>POWERED BY TISTORY</p> -->
         </div>
@@ -155,7 +129,8 @@
                         <li>
                           <a href="[##_cover_item_url_##]">
                             <span class="thum">
-                              <s_cover_item_thumbnail><img src="//i1.daumcdn.net/thumb/C264x200/?fname=[##_cover_item_thumbnail_##]" alt=""></s_cover_item_thumbnail>
+                              <s_cover_item_thumbnail><img src="//i1.daumcdn.net/thumb/C264x200/?fname=[##_cover_item_thumbnail_##]" alt="">
+                              </s_cover_item_thumbnail>
                             </span>
                             <s_cover_item_article_info>
                               <span class="category">[##_cover_item_category_##]</span>
@@ -221,6 +196,7 @@
                       <s_cover_item>
                         <s_cover_item_article_info>
                           <li class="article-item">
+
                             <a href="[##_cover_item_url_##]" class="article-link">
                               <figure>
                                 <s_cover_item_thumbnail>
@@ -230,11 +206,13 @@
                             </a>
                             <div class="article-info">
                               <div class="article-meta">
+
                                 <a href="[##_cover_item_category_link_##]" target="_self" class="category">
                                   [##_cover_item_category_##]
                                 </a>
                                 <span class="date">[##_cover_item_simple_date_##]</span>
                               </div>
+
                               <a href="[##_cover_item_url_##]">
                                 <span class="title">[##_cover_item_title_##]</span>
                                 <span class="excerpt">[##_cover_item_summary_##]</span>
@@ -280,10 +258,19 @@
                 <p>[##_var_footer-text_##]</p>
               </s_if_var_footer-text>
               <div class="social-link">
-                <s_if_var_sns-pinterest><a href="[##_var_sns-pinterest_##]" class="pinterest"><span class="">Pinterest</span></a></s_if_var_sns-pinterest>
-                <s_if_var_sns-facebook><a href="[##_var_sns-facebook_##]" class="facebook">Facebook</a></s_if_var_sns-facebook>
-                <s_if_var_sns-twitter><a href="[##_var_sns-twitter_##]" class="twitter">Twitter</a></s_if_var_sns-twitter>
-                <s_if_var_sns-instagram><a href="[##_var_sns-instagram_##]" class="instagram">Instagram</a></s_if_var_sns-instagram>
+                <s_if_var_sns-pinterest>
+
+                  <a href="[##_var_sns-pinterest_##]" class="pinterest"><span class="">Pinterest</span></a>
+                </s_if_var_sns-pinterest>
+                <s_if_var_sns-facebook>
+                  <a href="[##_var_sns-facebook_##]" class="facebook">Facebook</a>
+                </s_if_var_sns-facebook>
+                <s_if_var_sns-twitter>
+                  <a href="[##_var_sns-twitter_##]" class="twitter">Twitter</a>
+                </s_if_var_sns-twitter>
+                <s_if_var_sns-instagram>
+                  <a href="[##_var_sns-instagram_##]" class="instagram">Instagram</a>
+                </s_if_var_sns-instagram>
               </div>
               <nav class="menu">
                 [##_blog_menu_##]
@@ -308,8 +295,14 @@
                 <span class="author">[##__notice_rep_author_##]</span>
                 <span class="date">[##_notice_rep_date_##]</span>
                 <s_ad_div>
-                  <span><a href="[##_s_ad_m_link_##]">수정</a></span>
-                  <span><a href="#" onclick="[##_s_ad_d_onclick_##]">삭제</a></span>
+                  <span>
+
+                    <a href="[##_s_ad_m_link_##]">수정</a>
+                  </span>
+                  <span>
+
+                    <a href="#" onclick="[##_s_ad_d_onclick_##]">삭제</a>
+                  </span>
                 </s_ad_div>
               </div>
             </div>
@@ -364,11 +357,11 @@
 
           <!-- [s] 글그룹 -->
 
-					<!-- [s] 리스트 그룹 -->
+          <!-- [s] 리스트 그룹 -->
           <s_list>
             <div class="post-header">
               <span>
-								<h1>[##_list_conform_##]</h1>
+                <h1>[##_list_conform_##]</h1>
               </span>
               <span class="number" style="padding-left: 5px; font-weight: bold; color:#72afcf;">[##_list_count_##]</span>
               <div class="list-type">
@@ -377,32 +370,35 @@
               </div>
             </div>
             <ul class="article-list">
-							<s_list_rep>
-              <li class="article-item">
-                <a href="[##_list_rep_link_##]" class="article-link">
-                  <figure>
-                    <s_list_rep_thumbnail>
-                      <span style="background-image:url('//i1.daumcdn.net/thumb/R600x0/?fname=[##_list_rep_thumbnail_url_##]')"></span>
-                    </s_list_rep_thumbnail>
-                  </figure>
-                </a>
-                <div class="article-info">
-                  <div class="article-meta">
-                    <a href="[##_list_rep_category_link_##]" target="_self" class="category">
-                      [##_list_rep_category_##]
-                    </a>
-                    <span class="date">[##_list_rep_regdate_##]</span>
-                  </div>
-                  <a href="[##_list_rep_link_##]">
-                    <span class="title">[##_list_rep_title_##]</span>
-                    <span class="excerpt">[##_list_rep_summary_##]</span>
+              <s_list_rep>
+                <li class="article-item">
+
+                  <a href="[##_list_rep_link_##]" class="article-link">
+                    <figure>
+                      <s_list_rep_thumbnail>
+                        <span style="background-image:url('//i1.daumcdn.net/thumb/R600x0/?fname=[##_list_rep_thumbnail_url_##]')"></span>
+                      </s_list_rep_thumbnail>
+                    </figure>
                   </a>
+                  <div class="article-info">
+                    <div class="article-meta">
 
-                </div>
+                      <a href="[##_list_rep_category_link_##]" target="_self" class="category">
+                        [##_list_rep_category_##]
+                      </a>
+                      <span class="date">[##_list_rep_regdate_##]</span>
+                    </div>
 
-              </li>
-            </s_list_rep>
-						</ul>
+                    <a href="[##_list_rep_link_##]">
+                      <span class="title">[##_list_rep_title_##]</span>
+                      <span class="excerpt">[##_list_rep_summary_##]</span>
+                    </a>
+
+                  </div>
+
+                </li>
+              </s_list_rep>
+            </ul>
           </s_list>
 
           <s_article_rep>
@@ -410,6 +406,7 @@
               <div class="hgroup">
                 <h1>[##_article_rep_title_##] </h1>
                 <div class="article-meta">
+
                   <a href="[##_article_rep_category_link_##]" class="category">[##_article_rep_category_##]</a>
                   <!-- <span class="author">[##_article_rep_author_##]</span> -->
                   <span class="date">[##_article_rep_date_##]</span>
@@ -422,14 +419,11 @@
                 </div>
               </div>
               <div class="entry-wrap">
-								<!-- [s] 글 내용 출력 -->
-								<div class="entry-content">
-									[##_article_rep_desc_##]
-								</div>
-								<!-- <div id="toc-wrap">
-									<div id="toc-elements"></div>
-								</div> -->
-							</div>
+                <!-- [s] 글 내용 출력 -->
+                <div class="entry-content">
+                  [##_article_rep_desc_##]
+                </div>
+              </div>
 
               <!-- [s] 댓글 출력 -->
               <div class="reply-btn-wrap">
@@ -456,8 +450,11 @@
                             </div>
                             <p>[##_rp_rep_desc_##]</p>
                             <div class="control">
+
                               <a href="[##_rp_rep_link_##]">댓글주소</a>
+
                               <a href="#" onclick="[##_rp_rep_onclick_delete_##]">수정/삭제</a>
+
                               <a href="#" onclick="[##_rp_rep_onclick_reply_##]">댓글쓰기</a>
                             </div>
                             <s_rp2_container>
@@ -471,7 +468,9 @@
                                     </div>
                                     <p>[##_rp_rep_desc_##]</p>
                                     <div class="control">
+
                                       <a href="[##_rp_rep_link_##]">댓글주소</a>
+
                                       <a href="#" onclick="[##_rp_rep_onclick_delete_##]">수정/삭제</a>
                                     </div>
                                   </li>
@@ -525,6 +524,7 @@
                       <ul>
                         <s_article_related_rep>
                           <li>
+
                             <a href="[##_article_related_rep_link_##]">
                               <span class="thum">
                                 <s_article_related_rep_thumbnail>
@@ -553,6 +553,7 @@
             <div class="tags">
               <div class="items">
                 <s_tag_rep>
+
                   <a href="[##_tag_link_##]">[##_tag_name_##]</a>
                 </s_tag_rep>
               </div>
@@ -595,7 +596,9 @@
                           </div>
                           <p>[##_guest_rep_desc_##]</p>
                           <div class="control">
+
                             <a href="#" onclick="[##_guest_rep_onclick_delete_##]">수정/삭제</a>
+
                             <a href="#" onclick="[##_guest_rep_onclick_reply_##]">댓글쓰기</a>
                           </div>
                           <s_guest_reply_container>
@@ -609,6 +612,7 @@
                                   </div>
                                   <p>[##_guest_rep_desc_##]</p>
                                   <div class="control">
+
                                     <a href="#" onclick="[##_guest_rep_onclick_delete_##]">수정/삭제</a>
                                   </div>
                                 </li>
@@ -627,10 +631,13 @@
           <!-- [s] 페이지네이션 -->
           <s_paging>
             <div class="pagination">
+
               <a [##_prev_page_##] class="prev [##_no_more_prev_##]">이전</a>
               <s_paging_rep>
+
                 <a [##_paging_rep_link_##]>[##_paging_rep_link_num_##]</a>
               </s_paging_rep>
+
               <a [##_next_page_##] class="next [##_no_more_next_##]">다음</a>
             </div>
           </s_paging>
@@ -640,19 +647,40 @@
       [##_revenue_list_lower_##]
       <!-- [s]푸터-->
       <footer id="footer">
-				<!-- <div class="toggle-mode">
+        <!-- <div class="toggle-mode">
 					<button class="toggle-button">
 						다크
 					</button>
 				</div> 
 -->
-        <p class="copyright">DESIGN BY <a href="#">TISTORY</a> <a href="[##_owner_url_##]" class="admin">관리자</a></p>
+        <p class="copyright">DESIGN BY
+
+          <a href="#">TISTORY</a>
+
+          <a href="[##_owner_url_##]" class="admin">관리자</a>
+        </p>
       </footer>
     </div>
-    
   </s_t3>
-	<script src="./images/script.js"></script>
-	<!-- <script src="./images/toc.js"></script> -->
+  <script src="https://raw.githack.com/ylem76/tistory-skin/main/images/script.js"></script>
+  <script src="./images/toc_test.js"></script>
+  <script src="./images/kakao_share.js"></script>
+  <script>
+    // 애드센스 삽입
+    function bodyAdInit() {
+      var adContent = '<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-3549159921171034" data-ad-slot="3009618201"></ins>';
+      var h1Array = document.querySelectorAll(".entry-content h1");
+
+      Array.prototype.forEach.call(h1Array, function(h1, idx) {
+        if (idx === 0) {
+          return
+        }
+        $(h1).before(adContent);
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      });
+    }
+    bodyAdInit();
+  </script>
 </body>
 
 </html>

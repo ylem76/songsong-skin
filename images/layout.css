@@ -617,139 +617,126 @@
 }
 
 
-/* html[theme-color=dark]{background:#2F2F2F;} */
+
 
 
 
 /* dark mode */
-html[theme-color=dark] body {
+.color-dark {
 	background-color: #2F2F2F;
 	color:#fff;
 }
 
-html[theme-color=dark] #wrap #header {
-	background-color: rgba(0, 0, 0, 0.2);
+.color-dark #wrap #header {
+	background-color:rgba(50, 50, 50, 0.8);
 }
 
-html[theme-color=dark] #header .mobile-menu span,
-html[theme-color=dark] #header .mobile-menu:before,
-html[theme-color=dark] #header .mobile-menu:after {
+.color-dark #header .mobile-menu span,
+.color-dark #header .mobile-menu:before,
+.color-dark #header .mobile-menu:after {
 	background-color:#fff;
 }
 
-html[theme-color=dark] .category_list a {
+.color-dark .header__wrapper .category_list a {
 	color:#eee;
 }
-html[theme-color=dark] #header h1 a {
+.color-dark #header h1 a {
 	color:#eee;
 }
-html[theme-color=dark] #tt-body-index .profile {
+#tt-body-index.color-dark .profile {
 	background-color:#393939;
 }
-html[theme-color=dark] #tt-body-index .profile__title {
+#tt-body-index.color-dark .profile__title {
 	color:#eee;
 }
 
-html[theme-color=dark] .article-item .title {
+.color-dark .article-item .title {
 	color:#eee;
 }
-html[theme-color=dark] .article-item .excerpt {
+.color-dark .article-item .excerpt {
 	color:#aaa;
 }
 
-html[theme-color=dark] .article-item .article-link figure {
+.color-dark .article-item .article-link figure {
 	background-color:#393939;
 }
 
-html[theme-color=dark] .article-item .article-info .article-meta a {
+.color-dark .article-item .article-info .article-meta a {
 	border-color:#666;
 }
 
-html[theme-color=dark] .post-header .list-type button {
+.color-dark .post-header .list-type button {
 	color:#ddd;
 }
 
-html[theme-color=dark] .entry-content p {
+.color-dark .entry-content p {
 	color:#ddd;
 }
 
-html[theme-color=dark] .article-bottom {
+.color-dark .article-bottom {
 	background-color:#393939;
 }
 
-html[theme-color=dark] .related-articles h2 {
+.color-dark .related-articles h2 {
 	color:#eee;
 }
 
-html[theme-color=dark] .related-articles ul li .title {
+.color-dark .related-articles ul li .title {
 	color:#ddd;
 }
 
-html[theme-color=dark] .comments .comment-list {
+.color-dark .comments .comment-list {
 	border-color:#555;
 }
 
-html[theme-color=dark] .color-dark .comments .comment-list ul li {
+.color-dark .color-dark .comments .comment-list ul li {
 	border-color:#555;
 }
 
-html[theme-color=dark] .comments .comment-form textarea {
+.color-dark .comments .comment-form textarea {
 	border-color:#555;
 	color:#ddd;
 	outline-color:#aaa;
 }
 
-html[theme-color=dark] .comments .comment-form textarea::placeholder {
+.color-dark .comments .comment-form textarea::placeholder {
 	color:#999;
 }
 
-html[theme-color=dark] .btn,
-html[theme-color=dark] a.btn {
+.color-dark .btn,
+.color-dark a.btn {
 	color:#999;
 }
 
-html[theme-color=dark] .comments .comment-list ul li p {
+.color-dark .comments .comment-list ul li p {
 	color:#eee;
 }
 
-html[theme-color=dark] .comments .comment-list ul li .author-meta a {
+.color-dark .comments .comment-list ul li .author-meta a {
 	color:#eee;
 }
 
-html[theme-color=dark] .comments button {
+.color-dark .comments button {
 	border-color:#555;
 	transition:all 0.2s;
 }
 
-html[theme-color=dark] .comments button:hover {
+.color-dark .comments button:hover {
 	border-color:#72afcf;
 	color:#72afcf;
 	background-color:#222;
 }
 
-html[theme-color=dark] .pagination .no-more-prev::before,
-html[theme-color=dark] .pagination .no-more-next::before,
-html[theme-color=dark] .pagination .prev::before,
-html[theme-color=dark] .pagination .next::before {
+.color-dark .pagination .no-more-prev::before,
+.color-dark .pagination .no-more-next::before,
+.color-dark .pagination .prev::before,
+.color-dark .pagination .next::before {
 	background-color:#2f2f2f;
 	border-color:transparent;
 }
 
-html[theme-color=dark] .post-header {
+.color-dark .post-header {
 	border-color:#555;
-}
-
-html[theme-color=dark] .entry-wrap a:not(.on) {
-	color: #888;
-}
-
-html[theme-color=dark] .comments .comment-list ul li {
-	border-color:#444;
-}
-
-html[theme-color=dark] .tags h2 {color:#eee;}
-html[theme-color=dark] .tags ~ .related-articles {
-	border-top: 1px solid #444;
 }
 /* 
 @media (prefers-color-scheme: dark){

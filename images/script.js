@@ -1,53 +1,45 @@
-// 다크모드
-function darkMode() {
-    // 테마 가져오기
-    var storedTheme = localStorage.getItem('theme');
-	var prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-	var themeType = storedTheme;
+// function dark() {
+//   var theme = localStorage.getItem('theme');
 
-    // 저장된 테마가 없으면 선호 모드에 따라 로컬 스토리지 셋팅
-	if(!storedTheme) {
-        if(prefersDarkMode == false) {
-        	themeType = 'light';
-        } else {
-        	themeType = 'dark';
-        }
-        localStorage.setItem('theme', themeType);
-	}
+//   if (!theme) {
+//   localStorage.setItem('theme', 'light');
+//   }
 
-	// 데이터에 따라 html attribute 지정
-	document.documentElement.setAttribute('theme-color', themeType);
-}
+//   document.body.classList.toggle('color-dark', theme === 'dark');
+//   document.querySelector('.toggle-button').onclick = function() {
+//   var theme = localStorage.getItem('theme');
+//   localStorage.setItem('theme', `${theme === 'dark' ? 'light' : 'dark'}`);
+//   document.body.classList.toggle('color-dark');
+//   }
 
-darkMode();
+//   setTimeout(() => {
+//   document.body.style.visibility = 'visible';
+//   }, 300);
+// }
 
+// document.addEventListener('DOMContentLoaded', () => {
+// dark();
 
+// });
 
 (function ($) {
-	function scrollIndicator() {
-		function getScrollData(scrollBar) {
-			console.log(scrollBar);
+	function scroll() {
+		var scrollBar = document.querySelector('.scrollbar');
+
+		window.addEventListener('scroll', function () {
 			var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+			// const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
 			var scrollHeight = $('.reply-btn-wrap').offset().top;
 			var clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
 			var contentHeight = scrollHeight - clientHeight;
 			var percent = (scrollTop / contentHeight) * 100;
+
 			scrollBar.style.transform = `translateX(-${100 - percent}%)`;
-		}
-
-		$(document).ready(function() {
-			if($('article').length === 0) {return}
-			var scrollBar = document.querySelector('.scrollbar');
-			getScrollData(scrollBar);
-			window.addEventListener('scroll', function() {
-				getScrollData(scrollBar)
-			});		
-		});		
+		});
 	}
-
-	scrollIndicator();
-
-	
+	if ($('#article') != null) {
+		scroll();
+	}
 
 	function gnb() {
 		$('#header').on('click', '.mobile-menu', function () {

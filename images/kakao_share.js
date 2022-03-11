@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	// 게시글 페이지에서만 동작
+	// 게시글 페이지에서 동작
 	if ($("#tt-body-page").length == 1) {
 		kakaoShareFix();
 	}

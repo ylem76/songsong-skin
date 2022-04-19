@@ -230,8 +230,8 @@ function tocInit() {
       gap -
       gap;
 
-    // console.log($contentWrap.offset().top, TOC_CONST.headerHeight, gap);
-    // console.log(fixOffset);
+    console.log($contentWrap.offset().top, TOC_CONST.headerHeight, gap);
+    console.log(fixOffset);
     $(window).on("scroll", function (e) {
       scrollTop = e.target.scrollingElement.scrollTop;
       if (scrollTop < fixOffset) {
@@ -250,11 +250,14 @@ function tocInit() {
   }
 
   // 함수 실행
-  getHeadingData();
-  renderToc();
-  onClickMove();
-  onScrollMove();
-  onResizeCheck();
-  headerFix();
-  changeCurrent(0);
+
+  $(window).on("load", function () {
+    getHeadingData();
+    renderToc();
+    onClickMove();
+    onScrollMove();
+    onResizeCheck();
+    headerFix();
+    changeCurrent(0);
+  });
 }

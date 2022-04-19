@@ -1,5 +1,6 @@
 // 다크모드
 function darkMode() {
+  console.log("theme");
   // 테마 가져오기
   var storedTheme = localStorage.getItem("theme");
   var prefersDarkMode = window.matchMedia(

@@ -5,7 +5,7 @@ body {
 }
 
 .entry-content {
-	/* width: calc(100% - 200px); */ 
+	/* width: calc(100% - 200px); */
 }
 ul,
 li {
@@ -24,19 +24,21 @@ li {
 	line-height: 1.4;
 	overflow: hidden;
 }
+.toc-list ul li {position:relative;}
 .toc-list > ul {
 	width: calc(300px - 3em);
 	height: auto;
 	position: absolute;
-}
+/* background: #0b110b; */}
+
 .toc-list .lv-1::before {
 	content: '';
 	width: 2px;
 	height: 100%;
 	border-left: 2px solid #eee;
 	position: absolute;
-	z-index: -1;
-}
+	z-index: 0;
+/* background: #0040ff; */}
 
 .toc-item {
 	display: block;

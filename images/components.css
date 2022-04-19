@@ -12,7 +12,7 @@
   text-decoration: none;
   display: flex;
   border: 1px solid #dee5e8;
-  font-size: 0.875em;
+  font-size: 0.8125em;
   color: #72afcf;
   padding: 0 0.625em;
   border-radius: 1.5em;
@@ -20,7 +20,7 @@
   font-weight: 700;
   line-height: 1.5;
   transition: none;
-  font-family: 'Noto Sans KR';
+  
   height:1.75em;
   box-sizing:border-box;
 }
@@ -38,8 +38,6 @@
 }
 
 @media screen and (max-width:767px) {
-	.article-meta .category {		
-	}
 	.article-meta .date {
     font-size:0.75em;
     line-height: 1;
@@ -576,9 +574,6 @@ a.btn {
 
 }
 
-.pagination a:hover {
-}
-
 .pagination .selected {
   color: #000;
 }
@@ -882,9 +877,6 @@ a.btn {
 }
 
 @media screen and (max-width:1023px) {
-  .post-header {
-  }
-
   .cover-thumbnail-list {
     padding: 40px 40px 65px;
   }
@@ -1318,12 +1310,6 @@ a.btn {
   justify-content: center;
   align-items: flex-start;
   position: relative;
-  /* background: green; */
-  /* overflow: hidden; */
-}
-
-.article-item .category {
-  font-family: 'notoSansKr', sans-serif;
 }
 
 .article-item .article-info a {
@@ -1331,9 +1317,6 @@ a.btn {
 }
 
 @media screen and (max-width: 1023px) {
-  .article-item .title {
-  }
-
   .article-item .title::after {
     font-size: 42vw;
     top: -6vw;

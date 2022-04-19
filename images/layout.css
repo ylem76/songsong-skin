@@ -107,15 +107,23 @@
 	width: 40px;
 	height: 40px;
 	cursor:pointer;
+	border: 1px solid #ddd;
+	border-radius: 21px;
+	transition: width 0.3s, background 0.2s;
+	box-sizing: border-box;
 }
 #header .search > i {
 	display:block;
 	width: 100%;
 	height: 100%;
 	display:flex;
-	justify-content:center;
+	justify-content: right;
 	align-items:center;
 	transition: color 0.2s;
+	position: absolute;
+	right: 11px;
+	left: auto;
+	top: 0;
 }
 #header .search:hover > i {
 	color:#72afcf;
@@ -124,7 +132,7 @@
 	display: none;
 	width: 100%;
 	height: 40px;
-	padding: 0 10px;
+	padding: 0 16px;
 	font-size: 1em;
 	line-height: 40px;
 	color: #000;
@@ -132,16 +140,18 @@
 	box-sizing: border-box;
 	background-color: transparent;
 }
+#header .search input:-internal-autofill-selected {
+	border-radius:1.5em;
+}
+
 #header .search button {
 	display: none;
 	position: absolute;
 	top: 0;
 	right: 0;
 	z-index: 10;
-	width: 40px;
-	height: 40px;
-	background: url(./images/ico_package.png) no-repeat 0 0;
-/* 	text-indent: -999em; */
+	width: 38px;
+	height: 38px;
 	outline: none;
 }
 
@@ -166,11 +176,9 @@
 }
 #header .search.on {
 	width: 322px;
-	box-sizing:border-box;
 	border:1px solid #dee5e8;
-	border-radius:5px;
 	background-color:#fafafa;
-	/* border-bottom: 1px solid #000; */
+	/* background: red; */
 }
 #header .search.on>i {
 	display:none;
@@ -198,8 +206,10 @@
 	width:100%;
 	height:100%;
 	display:flex;
-	justify-content:center;
+	justify-content: center;
+	/* padding-right: 11px; */
 	align-items:center;
+	pointer-events: none;
 }
 #header .search.on button:hover i {
 	color:#72afcf;
@@ -320,6 +330,11 @@
   z-index: 99;
   background-color: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(2px);
+	transition:background 0.3s;
+}
+
+#wrap #header.top-fix {
+	background-color: rgba(255, 255, 255, 0.75);
 }
 
 #wrap #header .scrollbar {
@@ -399,21 +414,12 @@
   }
 
   #header .search {
-    top: 8px;
-    right: 1px;
+    top: 10px;
+    right: 11px;
   }
 
   #header .search.on {
-    position: absolute;
-    top: 64px;
-    left: 14px;
-    right: auto;
-    z-index: 100;
-    width: calc(100% - 28px);
-    padding: 10px 18px 10px 17px;
-    /* border: 0; */
-    /* background-color: #fff; */
-    box-sizing: border-box;
+    width: 82vw;
   }
 
   #header .search.on input {

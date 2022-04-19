@@ -81,12 +81,31 @@ darkMode();
       }
     });
 
-    $(document).on("click", "#header .search", function () {
-      if (!$(this).hasClass("on")) {
-        $(this).addClass("on").find("input").focus();
-        return false;
+    function toggleSearch() {
+      var $btnSearch = $("#header .search");
+      var searchEl = document.querySelector("#header .search");
+      function openSearch(e) {
+        $btnSearch.addClass("on").find("input").focus();
       }
-    });
+      function closeSearch(e) {
+        if (searchEl === e.target.parentElement) {
+          return;
+        }
+        // console.log("closed!");
+        $btnSearch.removeClass("on");
+        $(document).off("click", closeSearch);
+      }
+      $(document).on("click", "#header .search", function (e) {
+        // console.log("clicked!");
+        if (!$btnSearch.hasClass("on")) {
+          // console.log($btnSearch.hasClass("on"));
+          openSearch(e);
+          $(document).on("click", closeSearch);
+        }
+      });
+    }
+
+    toggleSearch();
   }
 
   function coverSlider() {

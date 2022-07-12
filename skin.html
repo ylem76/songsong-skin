@@ -6,10 +6,12 @@
   <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
   <link rel="canonical" href="https://songsong.dev/">
   <title>[##_page_title_##]</title>
-
+  <script src="./images/dark.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./style.css">
 
+
+
+  <link rel="stylesheet" href="./style.css">
   <!-- font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,11 +21,11 @@
 
   <link rel="stylesheet" href="./images/basic.css">
   <link rel="stylesheet" href="./images/components.css">
-  <link rel="stylesheet" href="./images/entrycontent.css">
-  <link rel="stylesheet" href="./images/layout.css">
+  <link rel="stylesheet" href="./images/entrycontent.css?v=220419">
+  <link rel="stylesheet" href="./images/layout.css?v=123">
   <link rel="stylesheet" href="./images/posttype.css">
   <link rel="stylesheet" href="./images/widget.css">
-  <link rel="stylesheet" href="./images/toc.css">
+  <link rel="stylesheet" href="./images/toc.css?v=123">
 
 
 
@@ -129,7 +131,8 @@
                         <li>
                           <a href="[##_cover_item_url_##]">
                             <span class="thum">
-                              <s_cover_item_thumbnail><img src="//i1.daumcdn.net/thumb/C264x200/?fname=[##_cover_item_thumbnail_##]" alt="">
+                              <s_cover_item_thumbnail>
+                                <img src="//i1.daumcdn.net/thumb/C264x200/?fname=[##_cover_item_thumbnail_##]" alt="">
                               </s_cover_item_thumbnail>
                             </span>
                             <s_cover_item_article_info>
@@ -662,13 +665,13 @@
       </footer>
     </div>
   </s_t3>
-  <script src="https://raw.githack.com/ylem76/tistory-skin/main/images/script.js"></script>
+  <script src="./images/script.js"></script>
   <script src="./images/toc_test.js"></script>
   <script src="./images/kakao_share.js"></script>
   <script>
     // 애드센스 삽입
     function bodyAdInit() {
-      var adContent = '<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-3549159921171034" data-ad-slot="3009618201"></ins>';
+      var adContent = '<ins class="adsbygoogle" style="display:block; text-align:center; width:calc(100% - 28px);" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-3549159921171034" data-ad-slot="3009618201" data-full-width-responsive="true"></ins>';
       var h1Array = document.querySelectorAll(".entry-content h1");
 
       Array.prototype.forEach.call(h1Array, function(h1, idx) {

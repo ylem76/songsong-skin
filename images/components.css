@@ -729,12 +729,12 @@ a.btn {
 .tags .items a {
 	  display: inline-flex;
 	  align-items: center;
-	  height: 1.75rem;
+	  justify-content: center;height: 1.75rem;
 	  border-radius:2em;
 	  width: auto;
 	  font-size: 0.75rem;
 	  box-sizing: border-box;
-	  padding: 0 0.75em;
+	  padding: 0 0.75em 0.25em;
 	  margin:0 1em 0.875em 0;	    
 	  text-decoration: none;  
 	  color: #999;

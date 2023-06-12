@@ -1,140 +1,148 @@
 html,
 body {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .entry-content {
-	/* width: calc(100% - 200px); */
+  /* width: calc(100% - 200px); */
 }
 ul,
 li {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .toc-list {
-	display: block;
-	position: relative;
-	width: 300px;
-	padding-left: 2em;
-	right: 0;
-	box-sizing: border-box;
-	line-height: 1.4;
-	overflow: hidden;
+  display: block;
+  width: 300px;
+  height: 100%;
+  padding-left: 2em;
+  margin-top: 2em;
+  right: 0;
+  box-sizing: border-box;
+  line-height: 1.4;
+  overflow: hidden;
+  position: sticky;
+  top: 100px;
 }
-.toc-list ul li {position:relative;}
-.toc-list > ul {
-	width: calc(300px - 3em);
-	height: auto;
-	position: absolute;
-/* background: #0b110b; */}
+.toc-list ol li {
+  position: relative;
+}
+.toc-list > ol {
+  width: calc(300px - 3em);
+  /* height: 300px; */
+  position: relative;
+  top: 0;
+  /* background: #0b110b; */
+}
 
-.toc-list .lv-1::before {
-	content: '';
-	width: 2px;
-	height: 100%;
-	border-left: 2px solid #eee;
-	position: absolute;
-	z-index: 0;
-/* background: #0040ff; */}
+.toc-list > ol::before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  border-left: 2px solid #eee;
+  position: absolute;
+  z-index: 0;
+  /* background: #0040ff; */
+}
 
 .toc-item {
-	display: block;
-	width: auto;
-	text-decoration: none;
-	font-weight: normal;
-	font-size: 0.875em;
-	line-height: 1.2;
-	padding-left: 1.875em;
-	border-left: 2px solid #eee;
-	cursor: pointer;
-	color: #333;
-	border-left: 2px solid transparent;
-	padding: 3px 0 3px 1.875em;
-	word-break: keep-all;
+  display: block;
+  width: auto;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 0.875em;
+  line-height: 1.2;
+  padding-left: 1.875em;
+  border-left: 2px solid #eee;
+  cursor: pointer;
+  color: #333;
+  border-left: 2px solid transparent;
+  padding: 3px 0 3px 1.875em;
+  word-break: keep-all;
 }
 
-.lv-1 > li > .toc-item {
-	font-weight: bold;
-	margin-top: 0.875em;
+.toc-list > ol > li > .toc-item {
+  font-weight: bold;
+  margin-top: 0.875em;
 }
-.lv-1 > li:first-child .toc-item {
-	margin-top: 0;
+.toc-list > ol > li:first-child .toc-item {
+  margin-top: 0;
 }
-.lv-2 > li > .toc-item {
-	font-weight: normal;
+.toc-list > ol > li > ol > li > .toc-item {
+  font-weight: normal;
 }
-.lv-3 > li > .toc-item {
-	font-weight: normal;
-	padding-left: 2.5em;
+.toc-list > ol > li > ol > li > ol > li > .toc-item {
+  font-weight: normal;
+  padding-left: 2.5em;
 }
-.lv-4 > li > .toc-item {
-	padding-left: 3em;
+.toc-list > ol > li > ol > li > ol > li > ol > li > .toc-item {
+  padding-left: 3em;
 }
 
 .on {
-	border-color: #72afcf;
+  border-color: #72afcf;
 }
 
 .on,
 .toc-common:hover {
-	color: #72afcf;
+  color: #72afcf;
 }
 
 .entry-wrap {
-	display: flex;
-	position: relative;
-	width: 100%;
-	overflow: hidden;
-	margin-top: 4em;
-	margin: 0 auto;
-	max-width: 1328px;
+  display: flex;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 4em;
+  margin: 0 auto;
+  max-width: 1328px;
 }
 .entry-wrap::before {
-	content: '';
-	display: block;
-	width: 300px;
+  content: "";
+  display: block;
+  width: 300px;
 }
 .fixed {
-	position: fixed;
+  position: fixed;
 }
 
 @media (max-width: 1345px) and (min-width: 1101px) {
-	.entry-wrap {
-		max-width: 1028px;
-	}
-	.entry-wrap::before {
-		display: none;
-	}
+  .entry-wrap {
+    max-width: 1028px;
+  }
+  .entry-wrap::before {
+    display: none;
+  }
 
-	.reply-btn-wrap {
-		width: 100%;
-		max-width: 1028px;
-		margin: 0 auto;
-		height: 10px;
-	}
-	.reply-btn-wrap .btn-comment {
-		right: 300px;
-	}
-	.reply-btn-wrap + div {
-		width: 1028px;
-		margin: 0 auto;
-	}
-	.reply-btn-wrap + div .comments {
-		margin-left: 0;
-	}
+  .reply-btn-wrap {
+    width: 100%;
+    max-width: 1028px;
+    margin: 0 auto;
+    height: 10px;
+  }
+  .reply-btn-wrap .btn-comment {
+    right: 300px;
+  }
+  .reply-btn-wrap + div {
+    width: 1028px;
+    margin: 0 auto;
+  }
+  .reply-btn-wrap + div .comments {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 1100px) {
-	.entry-content {
-		margin: 0 auto;
-	}
-	.entry-wrap::before {
-		display: none;
-	}
-	.toc-list {
-		display: none;
-	}
+  .entry-content {
+    margin: 0 auto;
+  }
+  .entry-wrap::before {
+    display: none;
+  }
+  .toc-list {
+    display: none;
+  }
 }

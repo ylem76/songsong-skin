@@ -1,33 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
-  <link rel="canonical" href="https://songsong.dev/">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+  <link rel="canonical" href="https://songsong.dev/" />
   <title>[##_page_title_##]</title>
   <script src="./images/dark.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-
-
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css" />
   <!-- font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
 
-  <link rel="stylesheet" href="./images/basic.css">
-  <link rel="stylesheet" href="./images/components.css">
-  <link rel="stylesheet" href="./images/entrycontent.css?v=220419">
-  <link rel="stylesheet" href="./images/layout.css?v=123">
-  <link rel="stylesheet" href="./images/posttype.css">
-  <link rel="stylesheet" href="./images/widget.css">
-  <link rel="stylesheet" href="./images/toc.css?v=123">
-
-
+  <link rel="stylesheet" href="./images/basic.css" />
+  <link rel="stylesheet" href="./images/components.css" />
+  <link rel="stylesheet" href="./images/entrycontent.css?v=221104" />
+  <link rel="stylesheet" href="./images/layout.css?v=123" />
+  <link rel="stylesheet" href="./images/posttype.css" />
+  <link rel="stylesheet" href="./images/widget.css" />
+  <link rel="stylesheet" href="./images/toc.css?v=123" />
 
   <!-- naver search advisor -->
   <meta name="naver-site-verification" content="c9f71c216cb7e517733a39db1295daaec5d37ea4" />
@@ -44,8 +40,8 @@
     function gtag() {
       dataLayer.push(arguments);
     }
-    gtag('js', new Date());
-    gtag('config', 'UA-199666140-1');
+    gtag("js", new Date());
+    gtag("config", "UA-199666140-1");
   </script>
   <!-- google adsense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3549159921171034" crossorigin="anonymous"></script>
@@ -58,12 +54,9 @@
     </div>
     <div id="wrap">
       <header id="header" class="header">
-        <div class="scrollbar">
-        </div>
+        <div class="scrollbar"></div>
         <div class="header__wrapper">
-          <nav role="navigation" class="category">
-            [##_category_list_##]
-          </nav>
+          <nav role="navigation" class="category">[##_category_list_##]</nav>
           <button type="button" class="mobile-menu"><span>메뉴</span></button>
         </div>
         <h1>
@@ -72,24 +65,18 @@
 
         <!-- [s] gnb -->
         <div class="menu">
-          <nav id="gnb">
-            [##_category_list_##]
-          </nav>
+          <nav id="gnb">[##_category_list_##]</nav>
           <div class="social-link">
             <s_if_var_sns-pinterest>
-
               <a href="[##_var_sns-pinterest_##]" class="pinterest">Pinterest</a>
             </s_if_var_sns-pinterest>
             <s_if_var_sns-facebook>
-
               <a href="[##_var_sns-facebook_##]" class="facebook">Facebook</a>
             </s_if_var_sns-facebook>
             <s_if_var_sns-twitter>
-
               <a href="[##_var_sns-twitter_##]" class="twitter">Twitter</a>
             </s_if_var_sns-twitter>
             <s_if_var_sns-instagram>
-
               <a href="[##_var_sns-instagram_##]" class="instagram">Instagram</a>
             </s_if_var_sns-instagram>
           </div>
@@ -98,32 +85,28 @@
         <div class="search">
           <i class="fas fa-search"></i>
           <s_search>
-            <input type="text" name="[##_search_name_##]" value="[##_search_text_##]" placeholder="검색내용을 입력하세요." onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }">
-            <button type="submit" onclick="[##_search_onclick_submit_##]"><i class="fas fa-search"></i><span>검색</span></button>
+            <input type="text" name="[##_search_name_##]" value="[##_search_text_##]" placeholder="검색내용을 입력하세요." onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }" />
+            <button type="submit" onclick="[##_search_onclick_submit_##]">
+              <i class="fas fa-search"></i><span>검색</span>
+            </button>
           </s_search>
         </div>
       </header>
-      <hr>
+      <hr />
       <section class="profile">
         <figure class="profile__thumb">
-          <span style="background-image:url('[##_image_##]');">
-          </span>
+          <span style="background-image: url('[##_image_##]')"> </span>
         </figure>
-        <h1 class="profile__title">
-          [##_blogger_##]
-        </h1>
-        <p class="profile__desc">
-          [##_desc_##]
-        </p>
-
+        <h1 class="profile__title">[##_blogger_##]</h1>
+        <p class="profile__desc">[##_desc_##]</p>
       </section>
       <section class="container">
         [##_revenue_list_upper_##]
         <article id="content">
           <s_cover_group>
             <s_cover_rep>
-              <s_cover name='cover-thumbnail-list'>
-                <div class='cover-thumbnail-list'>
+              <s_cover name="cover-thumbnail-list">
+                <div class="cover-thumbnail-list">
                   <div class="inner">
                     <h2>[##_cover_title_##]</h2>
                     <ul>
@@ -132,7 +115,7 @@
                           <a href="[##_cover_item_url_##]">
                             <span class="thum">
                               <s_cover_item_thumbnail>
-                                <img src="//i1.daumcdn.net/thumb/C264x200/?fname=[##_cover_item_thumbnail_##]" alt="">
+                                <img src="//i1.daumcdn.net/thumb/C264x200/?fname=[##_cover_item_thumbnail_##]" alt="" />
                               </s_cover_item_thumbnail>
                             </span>
                             <s_cover_item_article_info>
@@ -191,7 +174,7 @@
 														</s_cover> -->
 
               <!-- [s] 커버 리스트 -->
-              <s_cover name='cover-list'>
+              <s_cover name="cover-list">
                 <div class="cover-list">
                   <div class="inner">
                     <h2>[##_cover_title_##]</h2>
@@ -199,17 +182,17 @@
                       <s_cover_item>
                         <s_cover_item_article_info>
                           <li class="article-item">
-
                             <a href="[##_cover_item_url_##]" class="article-link">
                               <figure>
                                 <s_cover_item_thumbnail>
-                                  <span style="background-image:url('//i1.daumcdn.net/thumb/R600x0/?fname=[##_cover_item_thumbnail_##]')"></span>
+                                  <span style="
+                                        background-image: url('//i1.daumcdn.net/thumb/R600x0/?fname=[##_cover_item_thumbnail_##]');
+                                      "></span>
                                 </s_cover_item_thumbnail>
                               </figure>
                             </a>
                             <div class="article-info">
                               <div class="article-meta">
-
                                 <a href="[##_cover_item_category_link_##]" target="_self" class="category">
                                   [##_cover_item_category_##]
                                 </a>
@@ -220,9 +203,7 @@
                                 <span class="title">[##_cover_item_title_##]</span>
                                 <span class="excerpt">[##_cover_item_summary_##]</span>
                               </a>
-
                             </div>
-
                           </li>
                         </s_cover_item_article_info>
                       </s_cover_item>
@@ -250,19 +231,17 @@
 																		</div>
 																</div>
 														</s_cover> -->
-
             </s_cover_rep>
 
             <div class="cover-footer">
               <s_if_var_footer-image>
-                <div class="image" style="background-image:url([##_var_footer-image_##]);"></div>
+                <div class="image" style="background-image: url([##_var_footer-image_##])"></div>
               </s_if_var_footer-image>
               <s_if_var_footer-text>
                 <p>[##_var_footer-text_##]</p>
               </s_if_var_footer-text>
               <div class="social-link">
                 <s_if_var_sns-pinterest>
-
                   <a href="[##_var_sns-pinterest_##]" class="pinterest"><span class="">Pinterest</span></a>
                 </s_if_var_sns-pinterest>
                 <s_if_var_sns-facebook>
@@ -275,9 +254,7 @@
                   <a href="[##_var_sns-instagram_##]" class="instagram">Instagram</a>
                 </s_if_var_sns-instagram>
               </div>
-              <nav class="menu">
-                [##_blog_menu_##]
-              </nav>
+              <nav class="menu">[##_blog_menu_##]</nav>
             </div>
           </s_cover_group>
 
@@ -286,9 +263,7 @@
             <div class="hgroup">
               <h1>[##_article_rep_title_##]</h1>
             </div>
-            <div class="entry-content">
-              [##_article_rep_desc_##]
-            </div>
+            <div class="entry-content">[##_article_rep_desc_##]</div>
           </s_page_rep>
 
           <s_notice_rep>
@@ -299,22 +274,16 @@
                 <span class="date">[##_notice_rep_date_##]</span>
                 <s_ad_div>
                   <span>
-
                     <a href="[##_s_ad_m_link_##]">수정</a>
                   </span>
                   <span>
-
                     <a href="#" onclick="[##_s_ad_d_onclick_##]">삭제</a>
                   </span>
                 </s_ad_div>
               </div>
             </div>
-            <div class="entry-content">
-              [##_notice_rep_desc_##]
-            </div>
+            <div class="entry-content">[##_notice_rep_desc_##]</div>
           </s_notice_rep>
-
-
 
           <!-- [s]보호글 -->
           <s_article_protected>
@@ -336,7 +305,7 @@
             <s_permalink_article_rep>
               <div class="inner">
                 <div class="hgroup">
-                  <h1>[##_article_rep_title_##] </h1>
+                  <h1>[##_article_rep_title_##]</h1>
                   <div class="category">보호글</div>
                   <div class="post-meta">
                     <span class="author">[##_article_rep_author_##]</span>
@@ -346,8 +315,10 @@
                 <div class="entry-content">
                   [##_article_rep_desc_##]
                   <form class="protected_form" onsubmit="[##_article_dissolve_##]">
-                    <p>보호되어 있는 글입니다.<br>
-                      내용을 보시려면 비밀번호를 입력하세요.</p>
+                    <p>
+                      보호되어 있는 글입니다.<br />
+                      내용을 보시려면 비밀번호를 입력하세요.
+                    </p>
                     <fieldset>
                       <input type="password" id="[##_article_password_##]" name="[##_article_password_##]" value="" placeholder="비밀번호" />
                       <button type="submit" class="btn">입력</button>
@@ -366,26 +337,30 @@
               <span>
                 <h1>[##_list_conform_##]</h1>
               </span>
-              <span class="number" style="padding-left: 5px; font-weight: bold; color:#72afcf;">[##_list_count_##]</span>
+              <span class="number" style="padding-left: 5px; font-weight: bold; color: #72afcf">[##_list_count_##]</span>
               <div class="list-type">
-                <button type="button" class="thum"><i class="fas fa-th-large"></i><span>썸네일형</span></button>
-                <button type="button" class="list"><i class="fas fa-th-list"></i><span>리스트형</span></button>
+                <button type="button" class="thum">
+                  <i class="fas fa-th-large"></i><span>썸네일형</span>
+                </button>
+                <button type="button" class="list">
+                  <i class="fas fa-th-list"></i><span>리스트형</span>
+                </button>
               </div>
             </div>
             <ul class="article-list">
               <s_list_rep>
                 <li class="article-item">
-
                   <a href="[##_list_rep_link_##]" class="article-link">
                     <figure>
                       <s_list_rep_thumbnail>
-                        <span style="background-image:url('//i1.daumcdn.net/thumb/R600x0/?fname=[##_list_rep_thumbnail_url_##]')"></span>
+                        <span style="
+                              background-image: url('//i1.daumcdn.net/thumb/R600x0/?fname=[##_list_rep_thumbnail_url_##]');
+                            "></span>
                       </s_list_rep_thumbnail>
                     </figure>
                   </a>
                   <div class="article-info">
                     <div class="article-meta">
-
                       <a href="[##_list_rep_category_link_##]" target="_self" class="category">
                         [##_list_rep_category_##]
                       </a>
@@ -396,9 +371,7 @@
                       <span class="title">[##_list_rep_title_##]</span>
                       <span class="excerpt">[##_list_rep_summary_##]</span>
                     </a>
-
                   </div>
-
                 </li>
               </s_list_rep>
             </ul>
@@ -407,9 +380,8 @@
           <s_article_rep>
             <s_permalink_article_rep>
               <div class="hgroup">
-                <h1>[##_article_rep_title_##] </h1>
+                <h1>[##_article_rep_title_##]</h1>
                 <div class="article-meta">
-
                   <a href="[##_article_rep_category_link_##]" class="category">[##_article_rep_category_##]</a>
                   <!-- <span class="author">[##_article_rep_author_##]</span> -->
                   <span class="date">[##_article_rep_date_##]</span>
@@ -423,9 +395,7 @@
               </div>
               <div class="entry-wrap">
                 <!-- [s] 글 내용 출력 -->
-                <div class="entry-content">
-                  [##_article_rep_desc_##]
-                </div>
+                <div class="entry-content">[##_article_rep_desc_##]</div>
               </div>
 
               <!-- [s] 댓글 출력 -->
@@ -447,13 +417,12 @@
                         <s_rp_rep>
                           <li id="[##_rp_rep_id_##]">
                             <div class="author-meta">
-                              <img src="[##_rp_rep_logo_##]" class="avatar" alt="">
+                              <img src="[##_rp_rep_logo_##]" class="avatar" alt="" />
                               <span class="nickname">[##_rp_rep_name_##]</span>
                               <span class="date">[##_rp_rep_date_##]</span>
                             </div>
                             <p>[##_rp_rep_desc_##]</p>
                             <div class="control">
-
                               <a href="[##_rp_rep_link_##]">댓글주소</a>
 
                               <a href="#" onclick="[##_rp_rep_onclick_delete_##]">수정/삭제</a>
@@ -465,13 +434,12 @@
                                 <s_rp2_rep>
                                   <li id="[##_rp_rep_id_##]">
                                     <div class="author-meta">
-                                      <img src="[##_rp_rep_logo_##]" class="avatar" alt="">
+                                      <img src="[##_rp_rep_logo_##]" class="avatar" alt="" />
                                       <span class="nickname">[##_rp_rep_name_##]</span>
                                       <span class="date">[##_rp_rep_date_##]</span>
                                     </div>
                                     <p>[##_rp_rep_desc_##]</p>
                                     <div class="control">
-
                                       <a href="[##_rp_rep_link_##]">댓글주소</a>
 
                                       <a href="#" onclick="[##_rp_rep_onclick_delete_##]">수정/삭제</a>
@@ -491,18 +459,20 @@
                       <s_rp_member>
                         <div class="field">
                           <s_rp_guest>
-                            <input type="text" name="[##_rp_input_name_##]" value="[##_guest_name_##]" placeholder="이름">
-                            <input type="password" name="[##_rp_input_password_##]" value="[##_rp_admin_check_##]" placeholder="암호">
+                            <input type="text" name="[##_rp_input_name_##]" value="[##_guest_name_##]" placeholder="이름" />
+                            <input type="password" name="[##_rp_input_password_##]" value="[##_rp_admin_check_##]" placeholder="암호" />
                           </s_rp_guest>
                         </div>
                       </s_rp_member>
                       <textarea name="[##_rp_input_comment_##]" cols="" rows="4" placeholder="여러분의 소중한 댓글을 입력해주세요."></textarea>
                       <div class="comment-bottom">
                         <div class="submit">
-                          <button type="submit" class="btn" onclick="[##_rp_onclick_submit_##]">댓글달기</button>
+                          <button type="submit" class="btn" onclick="[##_rp_onclick_submit_##]">
+                            댓글달기
+                          </button>
                         </div>
                         <div class="secret">
-                          <input type="checkbox" name="[##_rp_input_is_secret_##]" id="secret">
+                          <input type="checkbox" name="[##_rp_input_is_secret_##]" id="secret" />
                           <label for="secret" tabindex="0">Secret</label>
                         </div>
                       </div>
@@ -516,22 +486,22 @@
                   <s_tag_label>
                     <div class="tags">
                       <h2>태그</h2>
-                      <div class="items">
-                        [##_tag_label_rep_##]
-                      </div>
+                      <div class="items">[##_tag_label_rep_##]</div>
                     </div>
                   </s_tag_label>
                   <s_article_related>
                     <div class="related-articles">
-                      <h2><strong>[##_article_rep_category_##]</strong> 관련 글 목록</h2>
+                      <h2>
+                        <strong>[##_article_rep_category_##]</strong> 관련 글
+                        목록
+                      </h2>
                       <ul>
                         <s_article_related_rep>
                           <li>
-
                             <a href="[##_article_related_rep_link_##]">
                               <span class="thum">
                                 <s_article_related_rep_thumbnail>
-                                  <img src="//i1.daumcdn.net/thumb/R600x0/?fname=[##_article_related_rep_thumbnail_link_##]" alt="">
+                                  <img src="//i1.daumcdn.net/thumb/R600x0/?fname=[##_article_related_rep_thumbnail_link_##]" alt="" />
                                 </s_article_related_rep_thumbnail>
                               </span>
                               <span class="title">[##_article_related_rep_title_##]</span>
@@ -548,7 +518,6 @@
 
           <!-- [e] 글 그룹 -->
 
-
           <s_tag>
             <div class="hgroup">
               <h1>태그</h1>
@@ -556,7 +525,6 @@
             <div class="tags">
               <div class="items">
                 <s_tag_rep>
-
                   <a href="[##_tag_link_##]">[##_tag_name_##]</a>
                 </s_tag_rep>
               </div>
@@ -575,14 +543,16 @@
                     <s_guest_member>
                       <div class="field">
                         <s_guest_form>
-                          <input type="text" name="[##_guest_input_name_##]" value="[##_guest_name_##]" placeholder="이름">
-                          <input type="password" name="[##_guest_input_password_##]" value="[##_guest_password_##]" placeholder="암호">
+                          <input type="text" name="[##_guest_input_name_##]" value="[##_guest_name_##]" placeholder="이름" />
+                          <input type="password" name="[##_guest_input_password_##]" value="[##_guest_password_##]" placeholder="암호" />
                         </s_guest_form>
                       </div>
                     </s_guest_member>
                     <textarea name="[##_guest_textarea_body_##]" cols="" rows="4"></textarea>
                     <div class="submit">
-                      <button type="submit" class="btn" onclick="[##_guest_onclick_submit_##]">안부 남기기</button>
+                      <button type="submit" class="btn" onclick="[##_guest_onclick_submit_##]">
+                        안부 남기기
+                      </button>
                     </div>
                   </div>
                 </s_guest_input_form>
@@ -593,13 +563,12 @@
                       <s_guest_rep>
                         <li id="[##_guest_rep_id_##]">
                           <div class="author-meta">
-                            <img src="//t1.daumcdn.net/tistory_admin/static/skin/avatar_default.gif" class="avatar" alt="">
+                            <img src="//t1.daumcdn.net/tistory_admin/static/skin/avatar_default.gif" class="avatar" alt="" />
                             <span class="nickname">[##_guest_rep_name_##]</span>
                             <span class="date">[##_guest_rep_date_##]</span>
                           </div>
                           <p>[##_guest_rep_desc_##]</p>
                           <div class="control">
-
                             <a href="#" onclick="[##_guest_rep_onclick_delete_##]">수정/삭제</a>
 
                             <a href="#" onclick="[##_guest_rep_onclick_reply_##]">댓글쓰기</a>
@@ -609,13 +578,12 @@
                               <s_guest_reply_rep>
                                 <li id="[##_guest_rep_id_##]">
                                   <div class="author-meta">
-                                    <img src="//t1.daumcdn.net/tistory_admin/static/skin/avatar_default.gif" class="avatar" alt="">
+                                    <img src="//t1.daumcdn.net/tistory_admin/static/skin/avatar_default.gif" class="avatar" alt="" />
                                     <span class="nickname">[##_guest_rep_name_##]</span>
                                     <span class="date">[##_guest_rep_date_##]</span>
                                   </div>
                                   <p>[##_guest_rep_desc_##]</p>
                                   <div class="control">
-
                                     <a href="#" onclick="[##_guest_rep_onclick_delete_##]">수정/삭제</a>
                                   </div>
                                 </li>
@@ -634,10 +602,8 @@
           <!-- [s] 페이지네이션 -->
           <s_paging>
             <div class="pagination">
-
               <a [##_prev_page_##] class="prev [##_no_more_prev_##]">이전</a>
               <s_paging_rep>
-
                 <a [##_paging_rep_link_##]>[##_paging_rep_link_num_##]</a>
               </s_paging_rep>
 
@@ -646,7 +612,7 @@
           </s_paging>
         </article>
       </section>
-      <hr>
+      <hr />
       [##_revenue_list_lower_##]
       <!-- [s]푸터-->
       <footer id="footer">
@@ -656,7 +622,8 @@
 					</button>
 				</div> 
 -->
-        <p class="copyright">DESIGN BY
+        <p class="copyright">
+          DESIGN BY
 
           <a href="#">TISTORY</a>
 
@@ -665,18 +632,16 @@
       </footer>
     </div>
   </s_t3>
-  <script src="./images/script.js"></script>
-  <script src="./images/toc_test.js"></script>
-  <script src="./images/kakao_share.js"></script>
   <script>
     // 애드센스 삽입
     function bodyAdInit() {
-      var adContent = '<ins class="adsbygoogle" style="display:block; text-align:center; width:calc(100% - 28px);" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-3549159921171034" data-ad-slot="3009618201" data-full-width-responsive="true"></ins>';
+      var adContent =
+        '<ins class="adsbygoogle" style="display:block; text-align:center; width:calc(100% - 28px);" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-3549159921171034" data-ad-slot="3009618201" data-full-width-responsive="true"></ins>';
       var h1Array = document.querySelectorAll(".entry-content h1");
 
       Array.prototype.forEach.call(h1Array, function(h1, idx) {
         if (idx === 0) {
-          return
+          return;
         }
         $(h1).before(adContent);
         (adsbygoogle = window.adsbygoogle || []).push({});
@@ -684,6 +649,9 @@
     }
     bodyAdInit();
   </script>
+  <script src="./images/script.js"></script>
+  <script src="./images/toc.js"></script>
+  <script src="./images/kakao_share.js"></script>
 </body>
 
 </html>
